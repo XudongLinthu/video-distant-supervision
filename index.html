@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <title>HLA-Face</title>
+    <meta name="description" content="Lithium Description" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href="css/plugins.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/application.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+
+<body>
+
+    <!-- ABOUT -->
+
+    <section id="page-about" class="section">
+      <div align="center" style="padding-bottom: 100px;">
+<!--         <p class="copy-02">Work in progress</p> -->
+        <p class="heading h-01">Learning To Recognize Procedural Activities <br> with Distant Supervision </p>
+
+        <p class="copy-02">
+          <a href="https://xudonglinthu.github.io/">Xudong Lin</a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.fabiopetroni.com/">Fabio Petroni</a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.gedasbertasius.com/">Gedas Bertasius</a> &nbsp;&nbsp;&nbsp;
+          <a href="https://rohrbach.vision/">Marcus Rohrbach</a> &nbsp;&nbsp;&nbsp;
+          <a href="http://www.ee.columbia.edu/~sfchang/">Shih-Fu Chang</a> &nbsp;&nbsp;&nbsp;
+          <a href="https://ltorresa.github.io/home.html">Lorenzo Torresani</a> &nbsp;&nbsp;&nbsp;
+        </p>
+      </div>
+
+<div class="site-inner">
+        
+        <h3 class="heading h-03">Abstract</h3>
+       
+          
+            <p class="copy-02">In this paper we consider the problem of classifying fine-grained, multi-step activities (e.g., cooking different recipes, making disparate home improvements, creating various forms of arts and crafts) from long videos spanning up to several minutes. Accurately categorizing these activities requires not only recognizing the individual steps that compose the task but also capturing their temporal dependencies. This problem is dramatically different from traditional action classification, where models are typically optimized on videos that span only a few seconds and that are manually trimmed to contain simple atomic actions. While step annotations could enable the training of models to recognize the individual steps of procedural activities, existing large-scale datasets in this area do not include such segment labels due to the prohibitive cost of manually annotating temporal boundaries in long videos. To address this issue, we propose to automatically identify steps in instructional videos by leveraging the distant supervision of a textual knowledge base (wikiHow) that includes detailed descriptions of the steps needed for the execution of a wide variety of complex activities. Our method uses a language model to match noisy, automatically-transcribed speech from the video to step descriptions in the knowledge base. We demonstrate that video models trained to recognize these automatically-labeled steps (without manual supervision) yield a representation that achieves superior generalization performance on four downstream tasks: recognition of procedural activities, step classification, step forecasting and egocentric video classification. </p>
+          
+         
+            <div align="center" style="padding-top: 50px;padding-bottom:10px">
+              <img src="framework_web.png" width=70%> <br>
+            </div>
+            <p class='copy-02' style="color:#888888">Figure 1.  Illustration of our proposed framework. Given a long instructional video as input, our method generates distant supervision by matching segments in the video to steps described in a knowledge base (wikiHow). The matching is done by comparing the automatically-transcribed narration to step descriptions using a pretrained language model. This distant supervision is then used to learn a video representation recognizing these automatically annotated steps. This video is from the HowTo100M dataset.
+            </p>
+         
+        
+      </div>
+
+
+
+      <div class="site-inner" style="padding-top:50px;">
+        <p class="heading h-03"> Resources </p> 
+          <ul style="line-height:1.5; padding-left: 50px; padding-right: 50px">
+          　　<li class="copy-02"> Paper: <a href="https://arxiv.org/pdf/2201.10990.pdf">arXiv</a></li>
+             <li class="copy-02"> Demo video of procedural activity recognition results.</li>
+              <video class="welcome_vid" controls autoplay loop muted>
+  <source src="visualization_web_short.mp4" type="video/mp4">
+  Demo Video
+</video>
+          </ul>
+      </div>
+      
+
+      <div class="site-inner" style="padding-top:50px;">
+        <p class='heading h-03'> Citation</p>
+        <p class="copy-02"> @misc{lin2022learning, <br>
+      &nbsp; &nbsp; title={Learning To Recognize Procedural Activities with Distant Supervision}, <br>
+      &nbsp; &nbsp; author={Xudong Lin and Fabio Petroni and Gedas Bertasius and Marcus Rohrbach and Shih-Fu Chang and Lorenzo Torresani},<br>
+      &nbsp; &nbsp; year={2022},<br>
+      &nbsp; &nbsp; eprint={2201.10990},<br>
+      &nbsp; &nbsp; archivePrefix={arXiv},<br>
+      &nbsp; &nbsp; primaryClass={cs.CV}
+        }
+      <br> 
+        </p>
+      </div>
+      
+    <section id="page-about" class="section">
+
+</body>
+</html>
