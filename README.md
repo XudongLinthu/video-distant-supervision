@@ -1,2 +1,2 @@
-# co-grounding
-webpage for co-grounding
+# learning to recognize procedural activities with distant supervision
+webpage
